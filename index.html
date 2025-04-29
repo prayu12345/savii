@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Birthday | Page-1</title>
+
+	<link rel="stylesheet" href="style.css">
+
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+	<script src="app.js" defer></script>
+
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="content">
+
+			<header class="main-header">
+				<div class="layers">
+					<div class="layer__header">
+						<div class="layers__caption">Happy Birthday</div>
+						<div class="layers__title">Savi Dii</div>
+						
+					</div>
+					<div class="layer layers__base" style="background-image: url(img/balloon.jpg);"></div>
+					<div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
+					<div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+				</div>
+			</header>
+		
+			<article class="main-article" style="background-image: url(https://static.vecteezy.com/system/resources/previews/002/034/038/large_2x/luxury-gold-and-black-balloon-background-3d-rendering-with-cylynder-podium-black-friday-minimal-rendered-scene-3d-with-golden-podium-platform-stand-to-show-product-stage-showcase-background-vector.jpg);">
+				<div class="main-article__content">
+					<h2 class="main-article__header">To be continued</h2>
+					<p class="main-article__paragraph" style="font-size: 1.5rem; line-height: 1.8;">
+						<br>
+<br>Happy Birthday, Didi!
+Wishing you lots of love, happiness, and success today .
+					  </p>
+					  
+					<div class="button">
+						<a href="" onclick="checkPassword(event)">
+							<button class="birthday-btn">Click</button>
+						  </a>
+						  
+					</div>
+				</div>
+				<div class="copy">© ayush</div>
+			</article>
+
+		</div>
+	</div>
+	<script>
+		function checkPassword(event) {
+  event.preventDefault();
+
+  const password = prompt("🎁 Enter the secret password to continue:savi@212");
+  const correctPassword = "savi@212"; // you can change this
+
+  if (password === correctPassword) {
+    // Redirect to a new page
+    window.location.href = "birthday.html"; // change this to your actual page
+  } else if (password === null) {
+    alert("❌ Action canceled.");
+  } else {
+    alert("❌ Incorrect password. Try again!");
+  }
+}
+
+ </script>
+	  
+</body>
+</html>
